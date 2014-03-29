@@ -1,15 +1,12 @@
-//
-//  InsomniaAppDelegate.h
-//  Insomnia
-//
-//  Created by Charlie Somerville on 29/03/2014.
-//  Copyright (c) 2014 Charlie Somerville. All rights reserved.
-//
-
 #import <Cocoa/Cocoa.h>
+#import <IOKit/pwr_mgt/IOPMLib.h>
 
-@interface InsomniaAppDelegate : NSObject <NSApplicationDelegate>
+@interface InsomniaAppDelegate : NSObject <NSApplicationDelegate, NSMenuDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property IOPMAssertionID powerManagementAssertionId;
+@property (retain) NSMenu* statusMenu;
+@property (retain) NSMenuItem* switchMenuItem;
+@property (retain) NSMenuItem* exitMenuItem;
+@property (retain) NSStatusItem* statusItem;
 
 @end

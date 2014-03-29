@@ -16,6 +16,7 @@
 		CB0E3C0718E6B0C3007A314F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB0E3C0618E6B0C3007A314F /* Images.xcassets */; };
 		CB0E3C0E18E6B0C3007A314F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0E3C0D18E6B0C3007A314F /* XCTest.framework */; };
 		CB0E3C0F18E6B0C3007A314F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0E3BEE18E6B0C3007A314F /* Cocoa.framework */; };
+		CBA8283F18E6C21200324057 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA8283E18E6C21200324057 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		CB0E3C0618E6B0C3007A314F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB0E3C0C18E6B0C3007A314F /* InsomniaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsomniaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0E3C0D18E6B0C3007A314F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CBA8283E18E6C21200324057 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA8283F18E6C21200324057 /* IOKit.framework in Frameworks */,
 				CB0E3BEF18E6B0C3007A314F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +92,7 @@
 		CB0E3BED18E6B0C3007A314F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBA8283E18E6C21200324057 /* IOKit.framework */,
 				CB0E3BEE18E6B0C3007A314F /* Cocoa.framework */,
 				CB0E3C0D18E6B0C3007A314F /* XCTest.framework */,
 				CB0E3BF018E6B0C3007A314F /* Other Frameworks */,
